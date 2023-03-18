@@ -544,34 +544,52 @@
         <hr />
 
         <h2>Education</h2>
-        <h4>
-            2015, 6th Januray: Qualification for Associate Professorship |
-            France
-        </h4>
+        <div class="education">
+            <span> 2015, 6th Januray: </span>
+            <span class="title">
+                Qualification for Associate Professorship</span
+            >
+            <span class="place"> | France </span>
+        </div>
 
-        <h4>
-            2013, 21st May: PhD in Mechanical and Civil Engineering | University
-            of Montpellier, University of Reggio Calabria:
-            <br><span
-                style="font-weight: normal"
-            >
-                A numerical model to predict train induced vibrations and
-                dynamic overloads.</span
-            >
-        </h4>
-        <h4>
-            2011, 22nd March: Second-Level Professional Master in Railway
-            systems and Infrastructure Engineering | University of Rome "La
-            Sapienza"
-        </h4>
-        <h4>
-            2009, 16th April: Master of Science in Civil Engineering |
-            University of Palermo
-        </h4>
-        <h4>
-            2007, 18th May: Bachelor of Science in Civil Engineering |
-            University of Palermo, University of Montpellier
-        </h4>
+        <div class="education">
+            <span> 2013, 21st May: </span>
+            <span class="wrapper">
+                <span class="title">
+                    PhD in Mechanical and Civil Engineering
+                </span>
+                <span class="place">
+                    | University of Montpellier, University of Reggio Calabria
+                </span>
+                <p class="description">
+                    "A numerical model to predict train induced vibrations and
+                    dynamic overloads."
+                </p>
+            </span>
+        </div>
+
+
+
+
+        <div class="education">
+            <span>2011, 22nd March: </span>
+            <span class="title"> Second-Level Professional Master in Railway
+                systems and Infrastructure Engineering</span>
+            <span class="place"> | University of Rome "La
+                Sapienza"</span>
+        </div>
+        <div class="education">
+            <span>2009, 16th April: </span>
+            <span class="title">Master of Science in Civil Engineering</span>
+            <span class="place"> |
+                University of Palermo</span>
+        </div>
+        <div class="education">
+            <span>2007, 18th May: </span>
+            <span class="title">Bachelor of Science in Civil Engineering</span>
+            <span class="place"> |
+                University of Palermo, University of Montpellier</span>
+        </div>
 
         <hr />
 
@@ -1007,6 +1025,23 @@
     .date {
         font-size: smaller;
         color: #646464;
+    }
+
+    .title {
+        font-weight: 600;
+    }
+
+    .wrapper {
+        display: inline-table;
+    }
+
+    .wrapper p {
+        margin-block-start: 0.2em;
+        margin-block-end: 0.2em;
+    }
+
+    .education {
+        margin-block-start: 1em;
     }
 
     table {
