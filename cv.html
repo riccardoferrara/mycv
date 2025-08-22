@@ -5,6 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Curriculum Vitae of Riccardo Ferrara</title>
         <link rel="icon" type="image/x-icon" href="RF.ico" />
+        <style media="print">
+            @page { size: A4; margin: 12mm; }
+            html, body {
+                margin: 0 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            header, footer, h1, h2, h3 { page-break-after: avoid; }
+            table, tr, td, th { page-break-inside: avoid; }
+            a[href]:after { content: "" !important; }
+        </style>
     </head>
 
     <body>
