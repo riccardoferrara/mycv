@@ -148,13 +148,30 @@
                 <td>3 years</td>
             </tr>
             <tr>
-                <td rowspan="2">Databases</td>
+                <td rowspan="3">Databases</td>
                 <td>MySQL</td>
                 <td>6 years</td>
             </tr>
             <tr>
+                <td>PostgreSQL</td>
+                <td>2 years</td>
+            </tr>
+            <tr>
                 <td>MongoDB</td>
                 <td>2 years</td>
+            </tr>
+            <tr>
+                <td rowspan="3">AI & Machine Learning</td>
+                <td>RAG Systems</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>Vector Search & Embeddings</td>
+                <td>1 year</td>
+            </tr>
+            <tr>
+                <td>LLM Integration</td>
+                <td>1 year</td>
             </tr>
             <tr>
                 <td rowspan="2">Teaching</td>
@@ -239,14 +256,18 @@
         <hr />
 
         <h2>Professional Experience</h2>
-        <h3>AI & LLMs Engineer at Foundever</h3>
+        <h3>Full Stack Developer at Foundever (AI LLMs Team)</h3>
         <div class="date">11/2024 - Present | Paris (Remote)</div>
         <p>
-            In my latest role at Foundever, I joined the AI LLMs team to design and develop a scalable infrastructure for managing and serving large language models. This project involves building a robust model management system within a Kubernetes-based environment, integrating FastAPI services, vLLM for efficient inference, and S3 storage for model persistence. 
+            In my current role at Foundever, I joined the AI LLMs team as a Full Stack Developer with a strong focus on backend development. I design and develop scalable infrastructure for managing and serving large language models, building robust systems within a Kubernetes-based environment, integrating FastAPI services, vLLM for efficient inference, and S3 storage for model persistence.
             <br />
-            My primary responsibilities include designing and implementing APIs for model activation, deactivation, and inference requests, orchestrating model deployments and routing using Kubernetes namespaces, and ensuring secure authentication mechanisms within a multi-tenant architecture. Additionally, I focus on optimizing model loading strategies, implementing in-memory caching solutions, and conducting performance and resilience testing to guarantee high availability and fault tolerance.
+            My primary responsibilities include designing and implementing RESTful APIs for model activation, deactivation, and inference requests, orchestrating model deployments and routing using Kubernetes namespaces, and ensuring secure authentication mechanisms within a multi-tenant architecture. Additionally, I focus on optimizing model loading strategies, implementing in-memory caching solutions, and conducting performance and resilience testing to guarantee high availability and fault tolerance.
             <br />
-            This position allows me to apply my expertise in web services and machine learning infrastructure while continuously learning about the evolving landscape of AI deployment. Working closely with cross-functional teams, I contribute to streamlining model onboarding, governance, and monitoring, ensuring scalable and reliable AI services.
+            I am one of the core contributors to a centralized Inference Manager service that exposes OpenAI-compatible endpoints for chat, completions, and speech-to-text, and intelligently routes traffic across multiple providers (OpenAI, Azure, AWS, and self-hosted models). In this context I work on provider-agnostic pipelines, PII/PCI policy enforcement, and observability (metrics, tracing, and structured logging) to keep LLM workloads reliable, secure, and debuggable in production.
+            <br />
+            Another major project I am currently working on is a production-grade RAG (Retrieval-Augmented Generation) system that powers knowledge base management across the AI infrastructure. This system enables semantic search and intelligent document retrieval, combining vector embeddings with traditional keyword search. The architecture leverages Azure Cognitive Search for hybrid search, Azure Blob Storage for document ingestion, and Azure OpenAI for generating text embeddings. At present, I am working on integrating this RAG system with Azure SharePoint to ingest and index enterprise content at scale. The end-to-end document processing flow includes OCR, PII detection, intelligent text chunking, and automated embedding generation. A key focus is multi-tenant data isolation, with automatic client identifier injection for strict data separation.
+            <br />
+            The system includes comprehensive observability with Prometheus metrics for latency and throughput monitoring, and structured JSON logging. Deployment is fully automated with Docker containers orchestrated via Kubernetes and ArgoCD, supporting dev, staging, and production environments with PostgreSQL for persistent metadata storage.
         </p>
 
         <h3>Full Stack Lead Developer at Foundever</h3>
